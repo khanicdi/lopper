@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<di/div lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lopper brings many benefits and services to grow your great business.">
+    <meta name="author" content="Dang Nhan">
+    <link href="style/main.css" rel="stylesheet">
+    <link href="style/reset.css" rel="stylesheet">
+    <title>Lopper</title>
+  </head>
+
+  <body>
+    <!-- This project has not done yet, maybe lack logical, some problems when naming of class and id. So, BE PATIENT with my project, Mr. Sinh. Hope you will have a great time after review my code (\_^-^_/)
+    Yours sincerely,
+    Khan -->
+    <!-- According to Google, the naming of class and id is split by dash -
+    Reference: https://google.github.io/styleguide/htmlcssguide.html -->
+    <!-- Grammar in this project is sponsored by Grammarly -->
+
+    <!-- Header -->
+    <header class="main-header">
+      <nav class="navbar d-flex flex-row justify-content-between align-items-center">
+        <h1 class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img id="lopper-logo" src="images/interfaces/logo.png" alt="Lopper">
+          </a>
+        </h1>
+        <ul class="navbar-nav d-flex flex-row justify-content-between" id="lopper-navbar">
+          <li class="navbar-item active">
+            <a class="navbar-link" href="#">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Services</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Work</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">About</a>
+          </li>
+        </ul>
+        <div class="navbar-item" class="lopper-contact">
+          <img src="images/interfaces/mobile.png" alt="Phone">
+          <span class="phone-number">(01) 666 - 693 - 456</span>
+        </div>
+        <div class="navbar-item">
+          <a class="navbar-link" href="#">
+            <img src="images/interfaces/menu.png" alt="Menu">
+          </a>
+        </div>
+      </nav>
+      <div class="header-container d-flex fex-row">
+        <div class="title">
+          <p id="what-we-do">WHAT WE DO?</p>
+          <h1 class="main-title">We grow <span>great business</span></h1>
+          <div class="subtitle">
+            <p>
+              Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius
+              <a href="#">
+                <img class="arrow-icon" src="images/interfaces/arrow.png" alt="More">
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="scroll d-flex">
+          <div class="scroll-text">
+            <p class="">SCROLL TO SEE MORE</p>
+          </div>
+          <div class="scroll-image">
+            <img class="arrow-icon" src="images/interfaces/scroll.png" alt="Scroll">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Artical -->
+    <!-- The all-site-wrap class is used to contain the whole articles of the site -->
+    <main class="all-site-wrap">
+      <!-- TODO: search for when you should use flex display and how to keep the article in the same size when zooming in -->
+      <!-- TODO: Difference between flex and grid -->
+      <!-- TODO: How to keep page center when zooming out -->
+
+      <!-- Our future -->
+      <article class="d-flex" id="our-future-article">
+        <!--The article was split into 2 parts, 1 part is about article-media and the rest is about article-description-->
+        <div class="article-description">
+          <div class="article-meta">
+            <p id="intro">INTRO</p>
+          </div>
+          <div class="article-body">
+            <div class="article-heading">
+              <h2 id="our-future">Our future</h2>
+            </div>
+            <div class="article-description-content">
+              <h3>
+                Apparently we had reached a great height in the atmosphere,
+                for the sky was a dead black, and the stars had ceased to twinkle.
+              </h3>
+              <p>
+                By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside,
+                the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark
+                sphere,
+                whose upper half was strewn with silver.
+              </p>
+            </div>
+            <!-- The "button" should be a class because it is not unique and the "learn more button" must be id because of its uniqueness -->
+            <div class="button">
+              <button class="learn-more-button">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="article-media">
+          <!--The question is why most of the websites always put images div before content div??-->
+          <firgure class="article-image">
+            <img src="images/smile-woman.png" alt>
+          </firgure>
+          <div class="article-quote">
+            <q>Commodo sed egestas egestas fringilla phasellus faucibus.</q>
+          </div>
+          <div id="layer-behind-quotation"></div>
+        </div>
+      </article>
+
+      <!-- Shaping the future -->
+      <article class="d-flex" id="shaping-the-future-article">
+        <div class="article-description">
+          <div class="article-meta">BENEFITS</div>
+          <div class="article-body">
+            <div class="article-heading">
+              <h2>Shaping the future</h2>
+            </div>
+            <div class="article-description-content">
+              <h3>
+                Eget nunc scelerisque viverra mauris in aliquam. Dignissim sodales ut eu sem integer vitae. Libero nunc
+                consequat interdum varius.
+              </h3>
+              <p>
+                Magna sit amet purus gravida. Sit amet porttitor eget dolor morbi non.
+                <br /><br />
+                Lectus vestibulum mattis ullamcorper velit sed ullamcorper.
+                <br /><br />
+                Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Dui faucibus in ornare quam
+                viverra.
+                <br /><br />
+                Posuere ac ut consequat semper viverra.
+              </p>
+            </div>
+            <div class="button">
+              <button class="learn-more-button">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="article-media d-flex">
+          <div class="article-image">
+            <img src="images/coffee.png" alt="Coffee" id="coffee-image">
+          </div>
+          <div id="mobile-apps">
+            <p>MOBILE APPS</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Our services -->
+      <article id="our-services-article">
+        <div class="our-services-pages">
+          <p class="page-number">1/3</p>
+          <div class="arrow-logo">
+            <a href="#"><img id="left-arrow" src="images/interfaces/left-arrow.png" alt="Left arrow">
+            </a>
+            <a href="#"><img id="right-arrow" src="images/interfaces/right-arrow.png" alt="Right arrow">
+            </a>
+          </div>
+        </div>
+        <div class="our-services-article-description">
+          <div class="article-meta">WE ARE AMAZING</div>
+          <div class="our-services-article-body">
+            <div class="article-heading">
+              <h2>Our services</h2>
+            </div>
+            <div class="article-description-content">
+              <h3>
+                Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Quam elementum pulvinar etiam
+                non.
+                Eu consequat.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="our-services-lists-description d-grid" id="our-services-list">
+          <div class="webdesign service-block" id="webdesign-1">
+            <div class="service-logo">
+              <img src="images/interfaces/services-webdesign-logo.png" alt="Webdesign logo">
+            </div>
+            <div class="service-block-title">
+              <p>Webdesign</p>
+            </div>
+            <div class="service-block-content">
+              <p>
+                Tincidunt lobortis feugiat vivamus at augue eget. Risus feugiat in ante metus dictum. Amet aliquam id
+                diam
+                maecenas.
+              </p>
+            </div>
+          </div>
+          <div class="webdev service-block" id="webdev-1">
+            <div class="service-logo">
+              <!-- TODO: How to put an image in the center of div? Using align-items-center or something else? -->
+              <img src="images/interfaces/services-webdev-logo.png" alt="Webdev logo">
+            </div>
+            <div class="service-block-title">
+              <p>Webdev</p>
+            </div>
+            <div class="service-block-content">
+              <p>
+                Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Eu feugiat pretium nibh ipsum
+                consequat nisl vel pretium.
+              </p>
+            </div>
+          </div>
+          <div class="marketing service-block" id="marketing-1">
+            <div class="service-logo">
+              <img src="images/interfaces/services-marketing-logo.png" alt="Marketing logo">
+            </div>
+            <div class="service-block-title">
+              <p>Marketing</p>
+            </div>
+            <div class="service-block-content">
+              <p>
+                Eu augue ut lectus arcu bibendum at. Pellentesque nec nam aliquam sem et tortor consequat.
+              </p>
+            </div>
+          </div>
+          <div class="marketing service-block" id="marketing-2">
+            <div class="service-logo">
+              <img src="images/interfaces/services-marketing-2-logo.png" alt="Marketing logo">
+            </div>
+            <div class="service-block-title">
+              <p>Marketing</p>
+            </div>
+            <div class="service-block-content">
+              <p>
+                Id venenatis a condimentum vitae. Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Tortor
+                dignissim convallis aenean et.
+              </p>
+            </div>
+          </div>
+          <div class="webdesign service-block" id="webdesign-2">
+            <div class="service-logo">
+              <img src="images/interfaces/services-webdesign-2-logo.png" alt="Webdesign logo">
+            </div>
+            <div class="service-block-title">
+              <p>Webdesign</p>
+            </div>
+            <div class="service-block-content">
+              <p>
+                Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Malesuada fames ac turpis
+                egestas sed.
+              </p>
+            </div>
+          </div>
+          <div class="webdev service-block" id="webdev-2">
+            <div class="service-logo">
+              <img src="images/interfaces/services-webdev-2-logo.png" alt="Webdev logo">
+            </div>
+            <div class="service-block-title">
+              <p>Webdev</p>
+            </div>
+            <div class="service-block-content">
+              <p>
+                Integer quis auctor elit sed vulputate mi. Semper auctor neque vitae tempus. Vulputate odio ut enim
+                blandit volutpat maecenas volutpat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button class="learn-more-button">LEARN MORE</button>
+        </div>
+      </article>
+
+      <!-- Testimonials -->
+      <article id="company-quote-article">
+        <div class="company-gallery">
+          <div class="woman-chatting">
+            <img src="images/woman-chatting.png" alt="Woman chatting">
+          </div>
+          <div class="faces">
+            <img src="images/faces.png" alt="Faces">
+          </div>
+        </div>
+        <div class="company-quote-description">
+          <blockquote class="quotation" cite="Kerry Johnes - Some Company">Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing
+            tristique.</blockquote>
+          <p><span id="author">Kerry Johnes</span> - Some Company</p>
+        </div>
+      </article>
+
+      <!-- Newsletter -->
+      <article id="newsletter-article">
+        <div class="newsletter-article-description">
+          <h2>Subscribe to our newsletter</h2>
+          <p>Cras pulvinar mattis nunc sed blandit.</p>
+          <form>
+            <input type="email" required id="email" placeholder="ENTER EMAIL" />
+            <button id="subscribe-button">
+              SUBSCRIBE
+              <img src="images/interfaces/arrow-subscribe.png" alt="Subscribe" id="arrow-subscribe">
+            </button>
+          </form>
+          <hr />
+        </div>
+      </article>
+      </div>
+
+      <!-- Footer -->
+      <footer class="lopper-footer">
+        <div class="footer-container d-flex">
+          <div class="info-container">
+            <div class="info-container-content">
+              <img src="images/interfaces/logo.png" alt="Logo">
+              <p>Eu augue ut lectus <span>arcu bibendum at.</span></p>
+            </div>
+          </div>
+          <div class="menu-container">
+            <p class="footer-block-title">MENU</p>
+            <ul class="footer-block-content">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="services-container">
+            <p class="footer-block-title">SERVICES</p>
+            <ul class="footer-block-content">
+              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Ipsum</a></li>
+              <li><a href="#">Dolor</a></li>
+              <li><a href="#">Sit Amet</a></li>
+            </ul>
+          </div>
+          <div class="contact-us-container">
+            <p class="footer-block-title">CONTACT US</p>
+            <ul class="footer-block-content">
+              <li><a href="#"><img id="email" src="images/interfaces/email.png" alt="Email">contact@lop.com</a></li>
+              <li><a href="#"><img id="phone" src="images/interfaces/mobile.png" alt="Phone">856 - 693 - 456</a></li>
+            </ul>
+          </div>
+          <div class="follow-us-container">
+            <p class="footer-block-title">FOLLOW US</p>
+            <ul class="footer-block-content">
+              <li><a href="#"><img src="images/interfaces/twitter.png" alt="Twitter"></a></li>
+              <li><a href="#"><img src="images/interfaces/facebook.png" alt="Facebook"></a></li>
+              <li><a href="#"><img src="images/interfaces/instagram.png" alt="Instagram"></a></li>
+              <li><a href="#"><img src="images/interfaces/youtube.png" alt="Youtube"></a></li>
+              <li><a href="#"><img src="images/interfaces/medium.png" alt="Medium"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2019 Lopper by mariuszdaniel. All right reserved.</p>
+        </div>
+      </footer>
+  </body>
