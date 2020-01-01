@@ -1,0 +1,669 @@
+/* TODO: Should I use 1 font-face for all fonts or 1 font-face for each font */
+@font-face {
+  font-family: 'M PLUS 1p thin';
+  src: url(../fonts/m-plus-1p/MPLUS1p-Thin.ttf)
+}
+
+@font-face {
+  font-family: 'M PLUS 1p regular';
+  src: url(../fonts/m-plus-1p/MPLUS1p-Regular.ttf)
+}
+
+@font-face {
+  font-family: 'M PLUS 1p medium';
+  src: url(../fonts/m-plus-1p/MPLUS1p-Medium.ttf)
+}
+
+@font-face {
+  font-family: 'M PLUS 1p light';
+  src: url(../fonts/m-plus-1p/MPLUS1p-Light.ttf)
+}
+
+@font-face {
+  font-family: 'M PLUS 1p bold';
+  src: url(../fonts/m-plus-1p/MPLUS1p-Bold.ttf)
+}
+
+@font-face {
+  font-family: 'M PLUS 1p extrabold';
+  src: url(../fonts/m-plus-1p/MPLUS1p-ExtraBold.ttf)
+}
+
+@font-face {
+  font-family: 'M PLUS 1p black';
+  src: url(../fonts/m-plus-1p/MPLUS1p-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Noticia Text italic';
+  src: url(../fonts/noticia-text/NoticiaText-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Noticia Text bolditalic';
+  src: url(../fonts/noticia-text/NoticiaText-BoldItalic.ttf);
+}
+
+*, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fcfcfc;
+  overflow-x:hidden;
+}
+
+/* Below is some CSS selector that apply for all website. Reference: bootstrap  */
+.align-items-center {
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: 318px 318px 318px;
+  grid-template-rows: 224px 224px;
+  grid-column-gap: 75px;
+  grid-row-gap: 82px;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Header */
+.main-header {
+  background-image: url(../images/flower.png);
+  background-color: #5e239d;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  margin: 0;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* Header-Navigation */
+.navbar {
+  flex-wrap: nowrap;
+  padding-top: 66px;
+}
+
+.navbar-nav {
+  margin-left: 58px;
+  padding: 5px 5px 0 5px;
+  width: 400px;
+}
+
+.navbar-item {
+  color: #fcfcfc;
+  letter-spacing: 1px;
+  font: 14.4px 'M PLUS 1p extrabold', sans-serif;
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+.navbar-link:visited {
+  color: #fcfcfc;
+}
+
+.active {
+  border-bottom: 1px solid #fcfcfc;
+  padding-bottom: 5px;
+}
+
+.navbar-nav :not(.active) .navbar-link{
+  opacity: .8;
+}
+
+.navbar-nav .navbar-link:hover{
+  opacity: 1;
+}
+
+.phone-number {
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+/* Header-Headline */
+.header-container {
+  color: #fcfcfc;
+  padding-top: 150px;
+  justify-content: space-between;
+}
+
+.title #what-we-do {
+  font-family: 'M PLUS 1p extrabold', sans-serif;
+  font-size: 14.4px;
+  letter-spacing: 4px;
+}
+
+.main-title {
+  font-family: 'M PLUS 1p black', sans-serif;
+  font-size: 99px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.main-title span {
+  color: #d61067;
+  display: block;
+}
+
+.subtitle {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  height: 100px;
+  margin-top: 40px;
+  margin-left: -79px;
+  padding-left: 80px;
+  width: 750px;
+}
+
+.subtitle p {
+  font-family: 'M PLUS 1p regular';
+  font-size: 18px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll {
+  height: 50px;
+  margin-right: -140px;
+  margin-top: 150px;
+  transform: rotate(90deg);
+  align-items: baseline;
+}
+
+.scroll-text {
+  font-family: 'M PLUS 1p extrabold';
+  font-size: 12.6px;
+  letter-spacing: 6px;
+}
+
+.scroll img {
+  transform: rotate(-90deg);
+  margin-left: 30px;
+}
+
+
+
+/* Article */
+.all-site-wrap {
+  margin-top: 78px;
+  display: block;
+}
+
+/* Our future */
+.article-meta {
+  color: #f61067;
+  font-family: 'M PLUS 1p extrabold';
+  font-size: 12.6px;
+  letter-spacing: 6px;
+}
+
+.article-description {
+  margin-left: 80px;
+  padding-top: 72px;
+  width: 600px;
+}
+
+.article-body {
+  width: 460px;
+  color: #30233d;
+}
+
+.article-heading {
+  font-family: 'M PLUS 1p medium';
+  font-size: 45px;
+  margin-top: 30px;
+}
+
+.article-description-content {
+  font-size: 18px;
+  margin-top: 40px;
+  line-height: 163.4%;
+}
+
+.article-description-content h3 {
+  font-family: 'M PLUS 1p extrabold';
+}
+
+.article-description-content p {
+  font-family: 'M PLUS 1p regular';
+  margin-top: 48px;
+  color: #776c82;
+}
+
+.button {
+  margin-top: 48px;
+}
+
+.learn-more-button {
+  background-color: #f61067;
+  border: none;
+  border-radius: 30px;
+  color: #fcfcfc;
+  font-family: 'M PLUS 1p medium';
+  font-size: 13.5px;
+  height: 45px;
+  letter-spacing: 2px;
+  width: 197px;
+}
+
+.article-image {
+  margin-top: 36px;
+  position: absolute;
+  z-index: 1;
+}
+
+.article-quote {
+  background-color: #30124e;
+  height: 509px;
+  margin-left: 328px;
+  margin-top: 36px;
+  position: absolute;
+  width: 330px;
+  z-index: 2;
+}
+
+.article-quote q {
+  color: #fcfcfc;
+  font-family: 'Noticia Text italic', sans-serif;
+  font-size: 22.5px;
+  line-height: 177.4%;
+  margin: 36px 57px auto 65px;
+  padding-top: 10px;
+  position: absolute;
+}
+
+/* Refer: http://www.d.umn.edu/~lcarlson/csswork/selectors/pseudo_dif.html */
+.article-quote q::before {
+  color: rgba(244, 244, 237, .3);
+  content: "\201C";
+  display: block;
+  font-family: 'Noticia Text bolditalic', sans-serif;
+  font-size: 144px;
+  font-style: italic;
+  font-weight: bold;
+  height: 150px;
+  line-height: 150.1%;
+  text-align: center;
+}
+
+.article-quote q::after {
+  color: rgba(244, 244, 237, .3);
+  content: "\201D";
+  display: block;
+  font-family: 'Noticia Text bolditalic', sans-serif;
+  font-size: 144px;
+  font-style: italic;
+  font-weight: bold;
+  height: 150px;
+  line-height: 150.1%;
+  text-align: center;
+}
+
+#layer-behind-quotation {
+  background-color: #30124e;
+  height: 545px;
+  margin-left: 264px;
+  position: absolute;
+  width:405px;
+}
+
+/* Shaping the future */
+#shaping-the-future-article {
+  margin-top: 140px;
+  padding-left: 80px;
+}
+
+#shaping-the-future-article .article-description {
+  background-color: #30124e;
+  margin-left: -80px;
+  padding: 144px 0 144px 80px;
+  width: 850px;
+}
+
+#shaping-the-future-article .article-body {
+  color: #fcfcfc;
+}
+
+#shaping-the-future-article .article-body p {
+  color: #fcfcfc;
+}
+
+#shaping-the-future-article .article-media {
+  margin-top: 150px;
+  margin-left: -250px;
+}
+
+#shaping-the-future-article .article-media #mobile-apps {
+  transform: rotate(90deg);
+  width: 200px;
+}
+
+#mobile-apps p {
+  color: #5e239d;
+  font-family: 'M PLUS 1p black';
+  font-size: 12.6px;
+  letter-spacing: 6px;
+}
+
+/* Our services */
+#our-services-article {
+  background-color: #150433;
+  margin-top: -135px;
+  padding-bottom: 261px;
+}
+
+#our-services-article .our-services-pages {
+  padding-top: 40px;
+  position: absolute;
+  right: 245px;
+}
+
+.our-services-pages .page-number {
+  color: #fcfcfc;
+  display: inline;
+  font-family: 'M PLUS 1p extrabold', sans-serif;
+  font-size: 12.6px;
+  letter-spacing: 6px;
+  line-height: 207.9%;
+  margin-right: 26px;
+}
+
+.arrow-logo {
+  display: inline-block;
+}
+
+.arrow-logo #left-arrow {
+  margin-right: 18px;
+}
+
+#our-services-article .our-services-article-description {
+  color: #fcfcfc;
+  margin: 0 auto;
+  padding-top: 324px;
+  text-align: center;
+  width: 558px;
+}
+
+#our-services-article .article-description-content h3 {
+  text-align: center;
+}
+
+.our-services-lists-description {
+  color: #fcfcfc;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.service-logo {
+  border: 1px solid rgba(255, 255, 255, 10%);
+  background-color: rgba(196, 196, 196, 2%);
+  border-radius: 36px;
+  height: 72px;
+  width: 72px;
+}
+
+.service-logo img {
+  margin: 23px;
+}
+
+.service-block-title {
+  font-family: 'M PLUS 1p medium', sans-serif;
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.service-block-content {
+  font-family: 'M PLUS 1p regular', sans-serif;
+  font-size: 16.2px;
+  line-height: 163.4%;
+  margin-top: 27px;
+}
+
+.webdesign .service-block-title {
+  color: #00f0b5;
+}
+
+.webdev .service-block-title {
+  color: #f61067;
+}
+
+.marketing .service-block-title {
+  color: #f67110;
+}
+
+#our-services-article .button {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* Testimonials */
+#company-quote-article {
+  height: 774px;
+  margin-top: -126px;
+  padding-bottom: 100px;
+}
+
+.company-gallery {
+  text-align: center;
+  height: 391px;
+}
+
+.faces {
+  margin-top: -350px;
+}
+
+.company-quote-description {
+  color: black;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+.company-quote-description blockquote {
+  font-family: 'Noticia Text italic', sans-serif;
+  font-size: 26px;
+  line-height: 177.4%;
+  width: 500px;
+  margin: -30px auto;
+}
+
+.company-quote-description p {
+  margin-top: 50px;
+  font-family: 'M PLUS 1p regular', sans-serif;
+  font-size: 18px;
+}
+
+.company-quote-description p #author {
+  color: #f61067;
+  font-weight: 800;
+}
+
+.company-quote-description::before {
+  color: #f61067;
+  content: "\201C";
+  display: block;
+  font-family: 'Noticia Text bolditalic', sans-serif;
+  font-size: 250px;
+  font-weight: bold;
+}
+
+/* Newsleter */
+#newsletter-article {
+  text-align: center;
+}
+
+.newsletter-article-description {
+  margin-top: 100px;
+}
+
+.newsletter-article-description h2 {
+  font-family: 'M PLUS 1p medium', sans-serif;
+  font-size: 45px;
+}
+
+.newsletter-article-description p {
+  color: #776c82;
+  font-family: 'M PLUS 1p medium', sans-serif;
+  font-size: 18px;
+  margin-top: 23px;
+}
+
+.newsletter-article-description form {
+  margin-top: 63px;
+}
+
+.newsletter-article-description form #email {
+  border: none;
+  font-family: 'M PLUS 1p extrabold', sans-serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 207.9%;
+}
+
+.newsletter-article-description form #subscribe-button {
+  border: none;
+  background: linear-gradient(to top, rgba(242, 242, 242, 1), rgba(255, 255, 255, 0));
+  color: #f61067;
+  font-family: 'M PLUS 1p extrabold', sans-serif;
+  font-size: 12.6px;
+  letter-spacing: 6px;
+  line-height: 207.9%;
+  width: 226px;
+}
+
+.newsletter-article-description hr {
+  border: 1.5px solid #f4f4ed;
+  margin: 0 auto;
+  width: 558px;
+}
+
+/* Footer style */
+.lopper-footer {
+  background-color: #150433;
+  height: 470px;
+}
+
+.footer-container {
+  align-items: flex-start;
+  color: #fcfcfc;
+  font-family: 'M PLUS 1p', sans-serif;
+  margin: 150px 50px auto 50px;
+  padding-top: 100px;
+}
+
+.info-container-content p {
+  margin-top: 55px;
+}
+
+.info-container-content p span {
+  display: block;
+  margin-top: 5px;
+}
+
+.footer-block-title {
+  border-bottom: 1px solid #F61067;
+  display: inline-block;
+  font-weight: 900;
+  padding: 0 0 15px 0;
+}
+
+.menu-container {
+  display: block;
+  margin-left: 200px;
+}
+
+.footer-block-content {
+  font-weight: 900;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.footer-block-content li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-block-content a {
+  text-decoration: none;
+}
+
+.footer-block-content a:hover {
+  font-weight: normal;
+}
+
+.footer-block-content a:visited {
+  color: #fcfcfc;
+}
+
+.services-container {
+  margin-left: 50px;
+}
+
+.contact-us-container {
+  margin-left: 100px;
+}
+
+.contact-us-container li {
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.contact-us-container li img {
+  margin-right: 10px;
+}
+
+.contact-us-container li img#email {
+  height: 9px;
+  width: 12px;
+}
+
+.contact-us-container li img#phone {
+  height: 13.5px;
+  width: 9px;
+}
+
+.contact-us-container li a{
+  font-size: 16px;
+}
+
+.follow-us-container {
+  margin-left: 150px;
+}
+
+.follow-us-container li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.copyright {
+  color: #fcfcfc;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 12px;
+  margin-top: 80px;
+  text-align: center;
+}
